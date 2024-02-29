@@ -1,5 +1,6 @@
 # Utilizamos una imagen de NGINX
 FROM nginx:alpine
+LABEL org.opencontainers.image.source https://github.com/Beringar/my-first-private-docker-app
 
 # Copiamos el contenido de la carpeta dist de nuestra aplicación (que es done se han generado los estáticos de react) front en el directorio /usr/share/nginx/html del contenedor
 COPY dist /usr/share/nginx/html
